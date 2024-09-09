@@ -1,0 +1,13 @@
+<div class="main">
+    <div class="profile" (click)="gotourl('profile')">
+        <div class="icon-item">
+            <mat-icon>account_box</mat-icon>
+        </div>
+        <div class="uname">{{user.firstName + ' ' + user.lastName}}</div>
+    </div>
+    <hr />
+    <div (click)="gotourl('employeehome')" [class.selected]="url === '/employeehome'"><mat-icon>home</mat-icon> Home</div>
+    <div (click)="gotourl('listemployee')" [class.selected]="url === '/listemployee'"><mat-icon>group</mat-icon> List Employee</div>
+    <div (click)="gotourl('profile')" [class.selected]="url === '/profile'"><mat-icon>person</mat-icon>Profile</div>
+    <div (click)="gotourl('logout')" [class.selected]="url === '/logout'"><mat-icon>logout</mat-icon>Logout</div>
+</div>

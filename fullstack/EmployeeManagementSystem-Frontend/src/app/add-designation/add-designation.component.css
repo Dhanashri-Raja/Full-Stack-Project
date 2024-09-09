@@ -1,0 +1,47 @@
+.form
+{
+  background-color: black;
+  border-radius: 10px;
+  padding: 51px;
+  text-align: center;
+  width: 250px;
+  margin-left: 35%;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 9px 9px 21px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.box {
+  padding: 12px;
+  margin: 20px;
+  width: 60%;
+  border-radius: 40px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 1rem;
+  margin-right: 15cap;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.7;
+    
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2cap;
+    color: aliceblue;
+  }
+.main{
+  background-image: url(../../../public/images/emp22.jpg);
+  height: 100vh;
+}
+.form input{
+  background: #000;
+}
+.form select{
+  background: #000;
+  color: white;
+}

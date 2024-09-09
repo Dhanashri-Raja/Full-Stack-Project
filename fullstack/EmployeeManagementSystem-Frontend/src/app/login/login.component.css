@@ -1,0 +1,114 @@
+.outer-container {
+  background-image: url(../../../public/images/emp22.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -10cap;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+}
+
+.login-container {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+h2{
+  font-size:2em;
+  text-align: center;
+  color: white;
+}
+.form-group{
+  position: relative;
+   width: 100%; /*width: 100%;/ */
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+  /* margin-left:-30px; */
+}
+.form-group label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-weight: 500;
+  pointer-events: none;
+  transition:.5s;
+  
+}
+.form-group input:focus~label,
+.form-group input:valid~label{
+  top: -5px;
+}
+.form-group input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #e5f0f8;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+.form-group .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #afa0c2;
+  line-height: 57px;
+}
+
+.error-message {
+  color: rgb(223, 205, 205);
+}
+
+.btn-block{
+  width: 100%;
+  height: 45px;
+  background:#3a99e2 ;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+.btn-block:hover{
+  background-color: #0d4570;
+}
+
+.login-register{
+  font-size: .9em;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.login-register p a:hover{
+  text-decoration:underline;
+  color: rgb(178, 178, 216);
+}

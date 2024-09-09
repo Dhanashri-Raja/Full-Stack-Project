@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50vh;
+}
+
+
+.full-screen-background {
+    background-image: url('../../../public/images/emp6[1].jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    text-align: center; 
+}
+.about{
+    margin-top: -40cap;
+    color: white;
+}

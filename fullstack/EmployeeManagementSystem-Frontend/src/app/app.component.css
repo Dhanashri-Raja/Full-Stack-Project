@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 74vh;
+}
+.left {
+    width: 20%;
+    
+}
+.right {
+    width: 80%;
+    border-left: 1px solid palevioletred;
+}

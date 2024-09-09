@@ -1,0 +1,49 @@
+
+
+ <div class="main" style="overflow: scroll; height: 100vh; scrollbar-width: none;">
+  <h1>LIST OF EMPLOYEES</h1><br>
+  <div class="left-panel">
+    <table border="2" class="table">
+      <thead class="header">
+        <tr >
+          <th ><b>Id</b></th>
+          <th><b>Name</b></th>
+          <th><b>Gender</b></th>
+          <th><b>Mail Id</b></th>
+          <th><b>Mobile Number</b></th>
+          <th><b>Department</b></th>
+          <th><b>Designation</b></th>
+          <th *ngIf="isAdmin"><b>salary</b></th>
+          <th><b>Date of Joining</b></th>
+          <th><b>Image</b></th>
+          <th colspan="2" *ngIf="isAdmin"><b>ACTIONS</b></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let employee of allemployee">
+              <td>{{ employee?.eid }}</td>
+              <td>{{ employee?.ename }}</td>
+              <td>{{ employee?.gender }}</td>
+              <td>{{employee?.email}}</td>
+              <td>{{employee?.mobile}}</td>
+              <td>{{employee?.department?.departmentName}}</td>
+              <td>{{employee?.designation?.designationName}}</td>
+              <td *ngIf="isAdmin">{{employee?.salary}}</td>
+              <td>{{employee?.joiningDate}}</td>
+              <td><img [src]="employee?.image"></td>
+              
+              <!-- <td><img [src]="employee?.pImage"></td> -->
+              <td *ngIf="isAdmin">
+                  <button class="btn btn-warning" (click)="onEdit(employee)" ><i class="fa fa-pencil"
+                      aria-hidden="true"></i>&nbsp;Edit</button>
+              </td>
+              <td *ngIf="isAdmin">
+                  <button class="btn btn-danger" (click)="onDelete(employee)" ><i class="fa fa-trash"
+                      aria-hidden="true"></i>&nbsp;Delete</button>
+              </td> 
+              </tr>
+              
+      </tbody>
+      </table>
+  </div>
+</div>

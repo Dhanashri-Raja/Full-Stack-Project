@@ -1,0 +1,48 @@
+
+  .form
+  {
+    /* background-color:aquamarine; */
+    background-color: black;
+    border-radius: 10px;
+    padding: 51px;
+    /* text-align: center; */
+    width: 450px;
+    margin-left: 24%;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 9px 9px 21px 8px;
+    height: 35rem;
+    overflow: auto;
+  }
+  /* .form:hover{
+    background-color: white;
+    color: white;
+  } */
+  .box {
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+    /* border-radius: 40px; */
+    background: rgba(0,0,0,0.5);
+    box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1rem;
+  }
+  .box:hover{
+    background-color: white;
+    color:black;
+  }
+  
+  ::placeholder{
+      color: white;
+      opacity: 0.7;
+      
+    }
+    h1 {
+      text-align: center;
+      /* background-color: black;
+      color: white; */
+      font-size: 50px;
+      font-weight: 800;
+      margin-left:-5cap;
+    }
+  

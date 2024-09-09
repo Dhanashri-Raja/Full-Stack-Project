@@ -1,0 +1,13 @@
+<div class="main">
+    <h1 style="margin-left: -5cap;">
+        Add Designation
+    </h1>
+    <div class="form" *ngIf="allDepartment && allDepartment.length === 0"> Please add Designation</div>
+    <div class="form" *ngIf="allDepartment && allDepartment.length > 0">
+        <input type="text" [(ngModel)]="departmentName" placeholder="Add Designation"/>
+        <select [(ngModel)]="parentDepartment">
+            <option *ngFor="let cat of allDepartment" [value]="cat.d_id">{{cat.departmentName}}</option>
+        </select>
+        <button class="btn btn-info" (click)="addDesignation()">Add</button>
+    </div>
+</div>

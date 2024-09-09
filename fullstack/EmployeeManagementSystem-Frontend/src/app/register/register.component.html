@@ -1,0 +1,36 @@
+<div class="container">
+  <div>
+    
+  </div>
+  <div class="form-panel">
+    <h2>Register Form</h2>
+    <div *ngIf="errorMessage && errorMessage !== ''" class="error" id="errordiv">
+      {{errorMessage}}
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-control" placeholder="Enter your first name" id="firstName" [(ngModel)]="user.firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control"  placeholder="Enter your last name" id="lastName" [(ngModel)]="user.lastName" name="lastName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control"  placeholder="Enter your email" id="email" [(ngModel)]="user.email" name="email" required>
+      </div>
+    
+    
+  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control"  placeholder="Enter your password" id="password" [(ngModel)]="user.pass" name="password" required>
+      </div>
+      <br>
+      <button type="submit"  class="submit-button"(click)="onSubmit()"><i class="fas fa-check"></i>Submit</button>
+      <button type="button"  class="cancel-button" (click)="goBack()"> <i class="fas fa-times"></i> Cancel</button> 
+    </form>
+  </div>
+</div>

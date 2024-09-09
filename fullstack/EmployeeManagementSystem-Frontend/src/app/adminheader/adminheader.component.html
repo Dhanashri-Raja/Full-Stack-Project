@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="profile" >
+        <div class="icon-item">
+            <mat-icon >account_circle</mat-icon>
+        </div>
+        <div class="uname">{{userName}}</div>
+    </div>
+    <div (click)="gotourl('adminDashboard')" [class.selected]="url === '/adminDashboard'"><mat-icon>person</mat-icon>  User Details</div>
+    <div (click)="gotourl('add-department')" [class.selected]="url === '/add-department'"><mat-icon>business</mat-icon>  Add Department</div>
+    <div (click)="gotourl('add-designation')" [class.selected]="url === '/add-designation'"><mat-icon>work</mat-icon>Add Designation</div>
+    <div (click)="gotourl('addemployee')" [class.selected]="url === '/addemployee'"><mat-icon>person_add</mat-icon>Add Employee</div>
+    <div (click)="gotourl('listemployee')" [class.selected]="url === '/listemployee'"><mat-icon>group</mat-icon>List Employee</div>
+    <div (click)="gotourl('logout')" [class.selected]="url === '/logout'"><mat-icon>logout</mat-icon>Logout</div>
+</div>

@@ -1,0 +1,19 @@
+img {
+    height: calc(100vh - 76px);
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.main {
+    background: url("../../../public/emp1/emp29.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 116%;
+}
+.employee-info {
+    color: white;
+}

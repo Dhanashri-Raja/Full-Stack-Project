@@ -1,0 +1,37 @@
+<div class="main">
+    <h1>
+        Add Employee
+    </h1>
+    <!-- <table> -->
+    <div class="form">
+        
+        <input type="text" class="box" placeholder="Employee Name" [(ngModel)]="ename">
+        <select class="box" [(ngModel)]="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <input type="text" class="box" placeholder="Employee Email" [(ngModel)]="email ">
+        <input type="text" class="box" placeholder="Employee Mobile No" [(ngModel)]="mobile ">
+       
+        <select [(ngModel)]="departmentId" (change)="getSubList()" class="box">
+            <option *ngFor="let department of departmentList" [value]="department.d_id">{{department.departmentName}}
+            </option>
+        </select>
+        <br />
+        <select [(ngModel)]="designationId" (change)="getSubList()"    class="box">
+            <option *ngFor="let department of designationList" [value]="department.dc_id">{{department.designationName}}
+            </option>
+        </select>
+        <input type="text" class="box" placeholder="Employee Salary" [(ngModel)]="salary">
+        <input type="text" class="box" placeholder="Employee Joining Date" [(ngModel)]="joiningDate ">
+        <input type="text" class="box" placeholder="Employee Image" [(ngModel)]="image ">
+        <div class="text-center">
+            <button (click)="addUpdateEmployee()" class="btn btn-info">{{isEdit ? 'Update': 'Add'}}</button>
+        
+        </div>
+    </div>
+<!-- </table> -->
+</div>

@@ -1,0 +1,60 @@
+ .form
+  {
+    background-color: black;
+    border-radius: 10px;
+    padding: 51px;
+    text-align: center;
+    width: 200px;
+    margin-left: 35%;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 9px 9px 21px 8px;
+  }
+  .box {
+    padding: 12px;
+    margin: 20px;
+    width: 100%;
+    border-radius: 40px;
+    background: rgba(0,0,0,0.5);
+    color: black;
+    font-size: 1rem;
+    margin-right: 5cap;
+  }
+  
+  ::placeholder{
+      color: white;
+      opacity: 0.7;
+      
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 3cap;
+      margin-left: -5cap;
+      color: aliceblue;
+    }
+    .main{
+      background: url(../../../public/images/des.jpg);
+      /* margin: 0 auto; */
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+      height: 100vh; 
+      width: 100%;
+     
+  
+    }
+.form{
+  display: flex;
+  flex-direction: column;
+  gap:20px
+}
+
+    .form input{
+      background: #000;
+      color:white;
+      min-width: 20%;
+    }
+
+    .form input:focus{
+      background: #fff;
+      color: black;
+    }
